@@ -1,0 +1,209 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pradnyan Hegde | Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'images/favicon.jpeg' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav id="navbar" class="flex s-around bg-color">
+        <div class="left-nav">
+            <h2 class="t-white">Portfolio</h2>
+        </div>
+        <div class="right-nav">
+            <ul class="flex">
+                <li><a href="#home" class="t-white roboto">Home <i class="fa-solid fa-house"></i></a></li>
+                <li><a href="#about" class="t-white roboto">About <i class="fa-solid fa-user"></i></a></li>
+                <li><a href="#skills" class="t-white roboto">Skills <i class="fa-solid fa-code"></i></a></li>
+                <li><a href="#Internship" class="t-white roboto">Internships <i class="fa-solid fa-laptop-code"></i></a></li>
+                <li><a href="#Projects" class="t-white roboto">Projects <i class="fas fa-project-diagram"></i></a></li>
+                <li><a href="#Contact" class="t-white roboto">Contact <i class="fa-solid fa-envelope"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="flex s-around sw-80 m-auto">
+        <div class="home-left flex items-center">
+            <div class="home-content">
+                <h6 class="poppinss">Hi, I'm</h6>
+                <h1 class="t-white">Pradnyan Hegde</h1>
+                <h4 class="poppinss">Python Developer | Software Engineer | SQL Developer</h4>
+                <a href="https://drive.google.com/file/d/18OBoExOYQIryWxmEb6CDcD771Wf8mayO/view?usp=drive_link" target="_blank">
+                    <button class="btn poppins">Resume</button>
+                </a>
+                <a class="btn live poppins" id="hireme" href="mailto:hegdepradnyan@gmail.com">Let's Talk</a>
+            </div>
+        </div>
+        <div class="home-right flex s-center items-center">
+            <div class="circle flex s-center items-center" id="mainImage">
+                <img src="{% static 'images/mypic1.jpg' %}" alt="Profile Image">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h1 class="t-center my-2 t-white f-2">About Me</h1>
+        <div class="about-container flex s-around">
+            <div class="about-left flex s-center items-center">
+                <img src="{% static 'images/mypic.png' %}" alt="About Image" style="width: 60%;">
+            </div>
+            <div class="about-right flex">
+                <div class="about-content">
+                    <h1 class="t-white m-b-1 poppins">Pradnyan Hegde</h1>
+                    <p class="t-white poppins">
+                        I’m a proactive Python Developer and AI/ML enthusiast passionate about building intelligent,
+                        data-driven applications. Through internships, I gained hands-on experience in AIML (data cleaning,
+                        model building, and deployment) and Full Stack Development using React.js, MongoDB, PHP, and SQL.
+                        I enjoy solving real-world problems with clean, efficient code and contributing to innovative teams.
+                    </p>
+                    <a class="btn" id="hireme" href="mailto:hegdepradnyan@gmail.com">Hire Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+<section id="skills">
+  <h1 class="t-center my-2 t-white f-2">Skills</h1>
+
+  <div class="skills-container flex f-col s-center">
+    <p class="t-white poppins t-center" style="max-width: 700px; margin-bottom: 2rem;">
+      Here are some of the technologies and tools I’ve mastered through projects and internships.
+    </p>
+
+    <div class="skill-box">
+      <h3>Python</h3>
+      <div class="skill-bar"><span class="skill-per python"></span></div>
+    </div>
+
+    <div class="skill-box">
+      <h3>Machine Learning</h3>
+      <div class="skill-bar"><span class="skill-per ml"></span></div>
+    </div>
+
+    <div class="skill-box">
+      <h3>HTML / CSS / JavaScript</h3>
+      <div class="skill-bar"><span class="skill-per web"></span></div>
+    </div>
+
+    <div class="skill-box">
+      <h3>SQL / MySQL</h3>
+      <div class="skill-bar"><span class="skill-per sql"></span></div>
+    </div>
+
+    <div class="skill-box">
+      <h3>PHP</h3>
+      <div class="skill-bar"><span class="skill-per php"></span></div>
+    </div>
+
+    <div class="skill-box">
+      <h3>React.js</h3>
+      <div class="skill-bar"><span class="skill-per react"></span></div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Internship Section -->
+    <section id="Internship">
+        <h1 class="t-center my-2 t-white f-2">Internships</h1>
+        <div class="projects-container flex s-center">
+            <div class="projects-item flex f-col s-center items-center">
+                <h1 class="t-white poppins">Python Full Stack Intern - QSPIDERS</h1>
+                <p class="t-white poppins">
+                    Developing full-stack web applications using the Django framework,Building dynamic and responsive frontend interfaces 
+                    with HTML, CSS, Bootstrap, and JavaScript, and deploying projects on Render for live access.
+
+                </p>
+                <p class="t-white poppins"><b>Sep 2025 | Bangalore</b></p>
+            </div>
+            <div class="projects-item flex f-col s-center items-center">
+                <h1 class="t-white poppins">AIML Intern - Codelab Systems</h1>
+                <p class="t-white poppins">
+                    Worked on AIML projects like heart stroke, salary and placement prediction.
+                    Built web applications using HTML, CSS, Bootstrap, JavaScript, and PHP, deployed on Render for live predictions.
+                </p>
+                <p class="t-white poppins"><b>Feb 2025 – Jul 2025 | Mangalore</b></p>
+            </div>
+            <div class="projects-item flex f-col s-center items-center">
+                <h1 class="t-white poppins">Full Stack Intern - Thaniya Technologies</h1>
+                <p class="t-white poppins">
+                    Developed responsive web apps using HTML, CSS, JavaScript, and React.js.
+                    Used MongoDB for backend, collaborated in a team to deliver high-quality full-stack projects.
+                </p>
+                <p class="t-white poppins"><b>Sep 2023 – Nov 2023 | Mangalore</b></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="Projects">
+        <h1 class="t-center my-2 t-white f-2">Projects</h1>
+        <div class="projects-container flex s-center">
+            <div class="projects-item flex f-col s-center items-center">
+                <a href="https://github.com/Pradnyan-hegde" target="_blank">
+                    <h1 class="t-white poppins">Multiple Disease Prediction</h1>
+                    <p class="t-white poppins">
+                        Predicts diseases such as heart disease, Parkinson’s, diabetes, and liver disease using SVM and Neural Networks.
+                        Enables early diagnosis and real-time results via web or mobile app.
+                    </p>
+                 </a>
+            </div>
+            <div class="projects-item flex f-col s-center items-center">
+                <a href="https://github.com/Pradnyan-hegde" target="_blank">
+                    <h1 class="t-white poppins">Car Price Prediction</h1>
+                    <p class="t-white poppins">
+                        Predicts car prices using ML models like Linear Regression and Random Forest after feature engineering and preprocessing.
+                        Deployed as an interactive web app.
+                    </p>
+                </a>
+            </div>
+            <div class="projects-item flex f-col s-center items-center">
+                <a href="https://github.com/Pradnyan-hegde" target="_blank">
+                    <h1 class="t-white poppins">NGO Web Application</h1>
+                    <p class="t-white poppins">
+                        Developed a web platform to help NGOs manage aid requests efficiently using HTML, PHP, and SQL.
+                        Improved response time and transparency for social initiatives.
+                    </p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="Contact" class="m-b-1">
+        <h1 class="t-center my-2 t-white f-2">Contact Me</h1>
+        <div class="contact-container flex s-around items-centers">
+            <div class="form" id="contactForm">
+                <form method="post">
+                    {% csrf_token %}
+                    <div class="form-div"><input type="text" name="name" placeholder="Enter Your Name" required></div>
+                    <div class="form-div"><input type="email" name="email" placeholder="Enter Your Email" required></div>
+                    <div class="form-div"><input type="phone" name="number" placeholder="Enter Your Phone" required></div>
+                    <div class="form-div"><textarea name="content" rows="8" placeholder="Enter Message"></textarea></div>
+                    <button type="submit" class="btn poppins">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <ul class="flex s-center w-80 font-awesome">
+            <a href="https://www.linkedin.com/in/pradnyan-hegde-408486299" target="_blank"><li><i class="fa-brands fa-linkedin-in"></i></li></a>
+            <a href="https://github.com/Pradnyan-hegde" target="_blank"><li><i class="fa-brands fa-github"></i></li></a>
+            <a href="mailto:hegdepradnyan@gmail.com"><li><i class="fa-solid fa-envelope"></i></li></a>
+        </ul>
+        <p class="t-center my-2 poppins">&copy; 2025 | Designed by <span class="cpy-white poppins">Pradnyan Hegde</span></p>
+    </footer>
+</body>
+</html>
