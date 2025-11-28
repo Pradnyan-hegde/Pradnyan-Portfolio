@@ -371,3 +371,71 @@ body {
     padding: 2rem 1rem;
   }
 }
+/* ========= GLOBAL MOBILE FIX ========= */
+.container, 
+#home, 
+#about, 
+#skills, 
+#Internship, 
+#Projects, 
+#Contact {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* ========= HOME SECTION FIX ========= */
+@media (max-width: 900px) {
+  #home {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home-left, .home-right {
+    width: 100% !important;
+    min-width: unset;
+  }
+
+  .home-content h1 {
+    font-size: 2.2rem;
+  }
+}
+
+/* ========= ABOUT FIX ========= */
+@media (max-width: 900px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-left, .about-right {
+    width: 100% !important;
+  }
+
+  .about-left img {
+    width: 80% !important;
+    margin: auto;
+  }
+}
+
+/* ========= PROJECTS FIX ========= */
+@media (max-width: 900px) {
+  .projects-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .projects-item {
+    width: 90% !important;
+    margin: auto;
+  }
+}
+
+/* ========= FOOTER FIX ========= */
+@media (max-width: 600px) {
+  #footer ul {
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+}
